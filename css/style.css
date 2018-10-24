@@ -1,0 +1,200 @@
+
+/* 
+---------------------Fonts--------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Niramit');
+
+/* 
+---------------------Body--------------------------- 
+*/
+body, html {
+    font-family: 'Niramit', sans-serif;
+    font-size: 18px;
+}
+
+/* 
+--------------------- Anchors--------------------------- 
+*/
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 
+---------------------Headings--------------------------- 
+*/
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* 
+---------------------Images--------------------------- 
+*/
+
+img {
+    max-width: 100%;
+}
+
+/* 
+---------------------Header--------------------------- 
+*/
+
+#header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border: 1 px solid black;
+    background-color: #ddd;
+}
+
+/* 
+---------------------Menu--------------------------- 
+*/
+
+#menu .navicon {
+    display: none;
+    font-size: 2rem;
+}
+
+#menu nav {
+    float: right;
+}
+
+#menu nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu nav li {
+    float: left;
+    list-style-type: none;
+}
+
+#menu nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #222;
+    color: #ddd;
+}
+
+#menu nav li a:hover {
+    background-color: #000;
+    color: white;
+}
+
+#menu nav li:last-child {
+    margin-right: 10px;
+}
+
+
+/* 
+---------------------Section--------------------------- 
+*/
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    height: 100vh;
+    min-height: 800px;
+    overflow: hidden;
+    padding-top: 60px;
+    /* position: relative; */
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section h2 {
+    background-color: white;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section article {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+#home {
+    background-image: url('/img/bg/b1.png');
+    background-color: chartreuse;
+}
+#about {
+    background-image: url('/img/bg/b2.png');
+    background-color: chartreuse;
+}
+#services {
+    background-color: darkblue;
+}
+#portfolio {
+    background-color: darkgray;
+    
+}
+
+#portfolio ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#portfolio ul li {
+    display: inline-block;
+    width: 48%;
+    min-height: 200px;
+}
+
+#contact {
+    background-image: url('/img/bg/b3.png');
+    background-color: white;
+}
+
+/* 
+---------------------Footer--------------------------- 
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+/* 
+---------------------Media Queries--------------------------- 
+*/
+
+@media screen and (max-width: 640px) {
+    #menu .navicon {
+        display: block;
+        float: right;
+    }
+    #menu nav {
+        /* display: none; */
+        width: 100%
+    }
+
+    #menu nav li {
+        width: 100%;
+    }
+
+    #portfolio ul li {
+        width: 100%;
+    }
+}
+
