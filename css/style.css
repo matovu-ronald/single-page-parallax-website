@@ -63,6 +63,8 @@ img {
 #menu .navicon {
     display: none;
     font-size: 2rem;
+    float: right;
+    margin-right: 10px;
 }
 
 #menu nav {
