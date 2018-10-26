@@ -109,8 +109,8 @@ img {
 }
 
 .section {
-    height: 100vh;
-    min-height: 800px;
+    min-height: 100vh;
+    /* min-height: 800px; */
     overflow: hidden;
     padding-top: 60px;
     /* position: relative; */
@@ -187,7 +187,7 @@ footer {
         float: right;
     }
     #menu nav {
-        /* display: none; */
+        display: none;
         width: 100%
     }
 
@@ -198,5 +198,9 @@ footer {
     #portfolio ul li {
         width: 100%;
     }
+}
+
+.fixPoint {
+    background-attachment: fixed;
 }
 
