@@ -200,7 +200,46 @@ footer {
     }
 }
 
+/* 
+---------------------Parallax Fix Class Effect--------------------------- 
+*/
+
 .fixPoint {
     background-attachment: fixed;
+}
+
+/* 
+---------------------Form--------------------------- 
+*/
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+label {
+    display: block;
+    width: 100%;
+}
+input {
+    min-height: 30px;
+}
+
+input, textarea {
+    width: 60%;
+    margin: 5px;
+    border: 1px solid #777;
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #f00; 
+}
+
+input::placeholder, textarea {
+    padding-left: 5px;
 }
 

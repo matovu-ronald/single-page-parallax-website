@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Single Page Parallax Website</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -126,10 +127,25 @@
             <h2>Contact Us</h2>
             <article>
                 <p>We are always happy to hear from you.</p>
+                <p>
+                    <form action="#">
+                        <div class="row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="row">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <label for="Message">Message</label>
+                            <textarea type="text" id="message" rows="10" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+                </p>
             </article>
-            <form action="#">
 
-            </form>
+
         </section>
         <footer>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, cupiditate.</p>
@@ -155,7 +171,7 @@
                 }, 1000);
                 if ($('.navicon').css('display') == 'block') {
                     $('.nav').slideUp();
-                }                
+                }
             });
             $(window).scroll(function () {
                 $('.section').each(function () {
@@ -165,8 +181,8 @@
                     } else {
                         $(this).removeClass('fixPoint');
                     }
-                })
-            })
+                });
+            });
         });
     </script>
 
